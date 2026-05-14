@@ -1,3 +1,6 @@
+##🛡️ Home SIEM Lab — Wazuh + File Integrity Monitoring
+A homelab project where I deployed Wazuh, an open-source SIEM platform, to monitor a Windows host from an Ubuntu VM — and verified it works by capturing real file event alerts.
+
 ## How It Works
 A Wazuh Manager runs on an Ubuntu VM and acts as the central brain — collecting, indexing, and displaying security alerts. A Wazuh Agent installed on the Windows host watches a designated folder in real time. Any file event (create, modify, delete) is forwarded to the manager and shows up as an alert on the Wazuh dashboard. This mirrors how enterprise SOC environments monitor endpoints for unauthorized or suspicious file changes.
 
